@@ -11,3 +11,14 @@ The files were organized in this order:
 The OBITools pipeline accept the ngsfilte on a txt or tsv file.
 
 For more informations access [Ubuntu Manuals](https://manpages.ubuntu.com/manpages/focal/man1/ngsfilter.1.html).
+
+The files were named as **ngsfilter_libX_pontos - ptXs/w.tsv**
+
+- Lib1 - Alcatrazes Archipelago
+- Lib2 - Queimada Grande Island 
+- Lib3 - Laje de Santos Marine State Park
+- Lib4 - Búzios Island
+
+In each Library (island) there were six sites (1-6), as shown in "pt(1-6)". 
+
+The s/w represents the season in which the samples were collected, summer and winter.
