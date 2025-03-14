@@ -5,8 +5,8 @@ primer sequences, and tag sequences, used for demultiplexing and further process
 
 The files were organized in this order:
 
-| Library code | Sample number | Tags | Forward | Reverse | Plate position |
-| ------------ | ------------- | ---- | ------- | ------- | -------------- |
+| Library code | Sample code | Tags | Forward | Reverse | Plate position |
+| ------------ | ----------- | ---- | ------- | ------- | -------------- |
 
 The OBITools pipeline accept the ngsfilte on a txt or tsv file.
 
