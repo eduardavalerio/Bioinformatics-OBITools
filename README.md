@@ -11,7 +11,7 @@ With OBITools it is possible to:
 3. **Analyzing ecological data** (e.g., diversity, community composition).
 
 ### OBITools workflow
-![](https://pythonhosted.org/OBITools/_images/fig-Pipeline.png)
+<img src="https://pythonhosted.org/OBITools/_images/fig-Pipeline.png" width="50%" />
 
 [OBITools Documentation](https://pythonhosted.org/OBITools/welcome.html#basic-concepts-of-the-obitools)
 
