@@ -34,5 +34,16 @@ The size depends of the primer that was used. In this case, I used Teleo2 primer
 
 `obiuniq -m sample EVLAfiltered_size.fasta > EVLA.unique.fasta`
 
+**Chimera deection with VSEARCH**
+
+May need to do this first in R 
+
+`install.packages("renv")`
+
+`library(renv)`
+
+`renv::init()`
+
+#restart R by quitting and re-launching 
 
 
