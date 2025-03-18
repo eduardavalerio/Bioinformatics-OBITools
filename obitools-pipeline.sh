@@ -5,7 +5,9 @@ gunzip <filename> #Unzip files (The input file is the raw data in fastq file)
 obicount <filename> #check number of reads 
 
 #Paired-end alignment and split good and bad alignments
-illuminapairedend -r <filename1> <filename2> | obiannotate -S goodali:’”Good_CODE” if score>30.00 else “Bad_CODE”’ | obisplit -t goodali
+illuminapairedend -r EV_Lib1_1.fq EV_Lib1_2.fq | \
+obiannotate -S "goodali:'Good_CODE' if score > 30.00 else 'Bad_CODE'" | \
+obisplit -t goodali
 
 #Demultiplex files using ngs filter 
 ngsfilter -t <NGSfilterfile> —-fasta-output -u unidentified_CODE.fasta Good_CODE.fastq> CODE.filtered.fasta
