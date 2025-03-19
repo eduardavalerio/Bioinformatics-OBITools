@@ -8,7 +8,7 @@ The files were organized in this order:
 | Library code | Sample code | Tags | Forward | Reverse | Plate position |
 | ------------ | ----------- | ---- | ------- | ------- | -------------- |
 
-The files were named as **ngsfilter_libX_pontos - ptXs/w.tsv**
+The files were named as **ngsfilter_libX_pontos - ptX(s/w)(s/d).tsv**
 
 - Lib1 - Alcatrazes Archipelago
 - Lib2 - Queimada Grande Island 
@@ -17,7 +17,9 @@ The files were named as **ngsfilter_libX_pontos - ptXs/w.tsv**
 
 In each Library (island) there were six sites (1-6), as shown in "pt(1-6)". 
 
-The s/w represents the season in which the samples were collected, summer and winter.
+The s/w represents the season in which samples were collected, summer and winter.
+
+The s/d represents the bathymetry in which sample was collected, surface or 10 meters depth.
 
 The OBITools pipeline accept the ngsfilte on a txt or tsv file.
 
