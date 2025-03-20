@@ -8,8 +8,6 @@ The files were organized in this order:
 | Library code | Sample code | Tags | Forward | Reverse | Plate position |
 | ------------ | ----------- | ---- | ------- | ------- | -------------- |
 
-The files were named as **ngsfilter_libX_pontos - ptX(s/w)(s/d).tsv**
-
 - Lib1 - Alcatrazes Archipelago
 - Lib2 - Queimada Grande Island 
 - Lib3 - Laje de Santos Marine State Park
