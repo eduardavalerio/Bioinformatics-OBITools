@@ -15,12 +15,6 @@ The files were named as **ngsfilter_libX_pontos - ptX(s/w)(s/d).tsv**
 - Lib3 - Laje de Santos Marine State Park
 - Lib4 - Búzios Island
 
-In each Library (island) there were six sites (1-6), as shown in "pt(1-6)". 
-
-The s/w represents the season in each samples were collected, summer and winter.
-
-The s/d represents the bathymetry in each sample was collected, surface or 10 meters depth.
-
 The OBITools pipeline accept the ngsfilte on a txt or tsv file.
 
 For more informations access [Ubuntu Manuals](https://manpages.ubuntu.com/manpages/focal/man1/ngsfilter.1.html).
