@@ -10,7 +10,8 @@ obiannotate -S "goodali:'Good_CODE' if score > 30.00 else 'Bad_CODE'" | \
 obisplit -t goodali
 
 #Demultiplex files using ngs filter 
-ngsfilter -t <NGSfilterfile> —-fasta-output -u unidentified_CODE.fasta Good_CODE.fastq> CODE.filtered.fasta
+ngsfilter -t <NGSfilterfile> —-fasta-output -u unidentified_CODE.fasta Good_CODE.fasta> CODE.filtered.fasta
+# It's possible to change the file type of the output https://manpages.ubuntu.com/manpages/focal/man1/ngsfilter.1.html
 
 #Filter sequences by size
 #The size depends of the primer that was used. In this case, I used Teleo2 primer that have approximately 160 bp
