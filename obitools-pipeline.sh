@@ -11,8 +11,22 @@ obisplit -t goodali
 
 #Demultiplex files using ngs filter 
 ngsfilter -t <NGSfilterfile> —-fasta-output -u unidentified_CODE.fasta Good_CODE.fasta> CODE.filtered.fasta
-# It's possible to change the file type of the output https://manpages.ubuntu.com/manpages/focal/man1/ngsfilter.1.html
-
+# It's possible to change the file type of the output 
+# Standard output format
+#       --fasta-output
+#              Output sequences in OBITools fasta format
+#
+#       --fastq-output
+#              Output sequences in Sanger fastq format
+#
+#   Generating an ecoPCR database
+#       --ecopcrdb-output=<PREFIX_FILENAME>
+#              Creates an ecoPCR database from sequence records results
+#
+#   Miscellaneous option
+#       --uppercase
+#              Print sequences in upper case (default is lower case)
+#
 #Filter sequences by size
 #The size depends of the primer that was used. In this case, I used Teleo2 primer that have approximately 160 bp
 obigrep -p 'seq_length>130' -p 'seq_length<190' -s '^[ACGT]+$' CODE.filtered.fasta > CODEfiltered_size.fasta
