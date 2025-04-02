@@ -61,7 +61,10 @@ quit()
 #when asked to save the workspace select 'y'
 
 #convert to vsearch format
-owu_obifasta2vsearch -i CODE.unique.fasta -o CODE.unique.vsearch.fasta
+owu_obifasta2vsearch -i CODE.unique.fasta -o CODE.unique.vsearch.fasta #sometimes this command do not work 
+# you can use the command below to convert to vsearch format as well 
+awk '{if ($0 ~ /^>/) print ">"$1; else print $0}' EVLA.unique.fasta > EVLA.unique.vsearch.fasta 
+
 
 #modify format of vsearch fasta file without having to open and edit in vim
 sed 's/ ;/;/g' CODE.unique.vsearch.fasta > CODE.unique.vsearch.mod.fasta
