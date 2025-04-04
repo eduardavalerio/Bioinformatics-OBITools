@@ -73,6 +73,8 @@ sed 's/ ;/;/g' CODE.unique.vsearch.fasta > CODE.unique.vsearch.mod.fasta
 vsearch --uchime_denovo CODE.unique.vsearch.mod.fasta --sizeout --nonchimeras CODE.nonchimeras.fasta --chimeras CODE.chimeras.fasta --threads 28 -- uchimeout CODE.uchimeout.txt
 
 ##Clustering with swarm
+#you must need to install the swarm package in the obitools environment 
+conda install -c bioconda swarm
 #used a d-value of 1 
 swarm -d 1 -f -z -t 20 -o CODE_SWARM1_output -s CODE_SWARM1_stats -w CODE_SWARM1_seeds.fasta CODE.nonchimeras.fasta
 
