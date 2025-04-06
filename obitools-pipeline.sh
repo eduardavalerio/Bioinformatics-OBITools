@@ -70,6 +70,7 @@ awk '{if ($0 ~ /^>/) print ">"$1; else print $0}' EVLA.unique.fasta > EVLA.uniqu
 sed 's/ ;/;/g' CODE.unique.vsearch.fasta > CODE.unique.vsearch.mod.fasta
 
 #chimera detection
+conda install -c bioconda vsearch #install vsearch in obitools environment
 vsearch --uchime_denovo CODE.unique.vsearch.mod.fasta --sizeout --nonchimeras CODE.nonchimeras.fasta --chimeras CODE.chimeras.fasta --threads 28 -- uchimeout CODE.uchimeout.txt
 
 ##Clustering with swarm
