@@ -71,7 +71,7 @@ sed 's/ ;/;/g' CODE.unique.vsearch.fasta > CODE.unique.vsearch.mod.fasta
 
 #chimera detection
 conda install -c bioconda vsearch #install vsearch in obitools environment
-vsearch --uchime_denovo CODE.unique.vsearch.mod.fasta --sizeout --nonchimeras CODE.nonchimeras.fasta --chimeras CODE.chimeras.fasta --threads 28 -- uchimeout CODE.uchimeout.txt
+vsearch --uchime_denovo CODE.unique.vsearch.mod.fasta --sizeout --nonchimeras CODE.nonchimeras.fasta --chimeras CODE.chimeras.fasta --threads 28 --uchimeout CODE.uchimeout.txt
 
 ##Clustering with swarm
 #you must need to install the swarm package in the obitools environment 
