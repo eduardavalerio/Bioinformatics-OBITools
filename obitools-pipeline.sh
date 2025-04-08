@@ -83,5 +83,13 @@ swarm -d 1 -f -z -t 20 -o CODE_SWARM1_output -s CODE_SWARM1_stats -w CODE_SWARM1
 obitab -o CODE.unique.fasta > CODE.new.tab
 owi_recount_swarm CODE_swarm_output CODE.new.tab
 
+#Make a reference database based in BOLD System (COI Marker)
+R
+install.packages("bold")
+library(bold)
+sequences <- bold_seqspec(country = "Brazil", bin = "Actinopterygii", marker = "COI-5P") #you can change the parameters
+write.fasta(sequences$sequence, sequences$id, "bold_peixes.fasta")
+quit()
+
 ##Taxonomic assignment using sintax 
-vsearch --threads "$THREADS" --sintax CODE_SWARM1_seeds.fasta --db REF_DB.sintax.v255.fasta --sintax_cutoff 0.7 --tabbedout SWARM1_sintax_output_lib1.tsv
+vsearch --threads "$THREADS" --sintax CODE_SWARM1_seeds.fasta --db bold_peixes.fasta --sintax_cutoff 0.7 --tabbedout SWARM1_sintax_output_lib1.tsv
