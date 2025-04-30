@@ -9,7 +9,7 @@ illuminapairedend -r EV_Lib1_1.fq EV_Lib1_2.fq | \
 obiannotate -S "goodali:'Good_CODE' if score > 30.00 else 'Bad_CODE'" | \
 obisplit -t goodali
 
-#Demultiplex files using ngs filter 
+#Demultiplex files using ngs filter (the primers are removed in this step as well)
 ngsfilter -t <NGSfilterfile> —-fasta-output -u unidentified_CODE.fasta Good_CODE.fasta> CODE.filtered.fasta
 # It's possible to change the file type of the output 
 # Standard output format
