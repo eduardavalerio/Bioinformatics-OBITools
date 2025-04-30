@@ -1,4 +1,4 @@
-# Bioinformatics - eDNA sequences 🐟
+# Bioinformatics - OBITools 🐟
 
 > Bioinformatics steps with eDNA Metabarcoding sequences.
 
